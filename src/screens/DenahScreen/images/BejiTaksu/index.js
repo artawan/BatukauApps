@@ -1,0 +1,1 @@
+export { default as PadmasariPalinggihBejiTaksu } from './padmasari-palinggih-beji-taksu.jpg';

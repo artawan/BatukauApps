@@ -1,0 +1,2 @@
+export { default as GedongPenyawanganDanauTamblingan } from './gedong-penyawangan-danau-tamblingan-dan-gedong-rong-2-palinggih-ida-bhatara-mujung.jpg';
+export { default as DenahPelinggihDanu } from './denah-pelinggih-danu-sawang.jpg';

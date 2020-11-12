@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BatukaruApps",
-    "slug": "BatukaruApps",
+    "name": "BatukauApps",
+    "slug": "BatukauApps",
     "platforms": [
       "ios",
       "android",
@@ -22,7 +22,14 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
-    }
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bitera.batukau"
+    },
+    "android": {
+      "package": "com.bitera.batukau",
+      "versionCode": 1
+    },
+    "scheme": "batukauapp",
+    "description": "Buku Saku Pura Luhur Batukau"
   }
 }

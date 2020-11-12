@@ -1,0 +1,2 @@
+export { default as PadmasariPalinggihPangapitLawangTengen } from './padmasari-palinggih-pangapit-lawang-kiwa.jpg';
+export { default as PadmasariPalinggihPangapitLawangKiwa } from './padmasari-palinggih-pangapit-lawang-tengen.jpg';

@@ -1,0 +1,10 @@
+export { default as BaleBaturSariBaleKulKul } from './bale-batur-sari-bale-kul-kul.jpg';
+export { default as DapurStaff } from './dapur-staff.jpg';
+export { default as DenahJabaSisi } from './denah-jaba-sisi.png';
+export { default as GedongAlitPalinggihPangapitLawangKiwa } from './gedong-alit-palinggih-pangapit-lawang-kiwa.jpg';
+export { default as GedongAlitPalinggihPangapitLawangTengen } from './gedong-alit-palinggih-pangapit-lawang-tengen.jpg';
+export { default as Gudang } from './gudang.jpg';
+export { default as PosKesehatan } from './pos-kesehatan.jpg';
+export { default as PosListrik } from './pos-listrik.jpg';
+export { default as Sekretariatan } from './sekretariatan.jpg';
+export { default as WantilanPasandekan } from './wantilan-pasandekan.jpg';
