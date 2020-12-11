@@ -53,7 +53,7 @@ export default class Slider extends React.Component {
       >
         <ImageBackground
           source={item.uri}
-          style={{ flex: 1, resizeMode: "cover", justifyContent: "center" }}
+          style={{ flex: 1, flexGrow: 1 , justifyContent: "center" }}
         >
           {/* <Text style={styles.sliderTitle}>{item.title}</Text> */}
         </ImageBackground>
