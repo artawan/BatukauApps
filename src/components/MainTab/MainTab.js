@@ -13,7 +13,6 @@ import {
   SejarahScreen,
   UpakaraScreen,
 } from "../../screens";
-import ModalScreen from "../../screens/DenahScreen/ModalScreen";
 
 const HomeStack = createStackNavigator();
 const DenahStack = createStackNavigator();
@@ -175,23 +174,6 @@ const DenahStackScreen = ({ navigation }) => (
           ></Icon.Button>
         ),
       }}
-    />
-
-    <DenahStack.Screen
-      name="Modal"
-      component={ModalScreen}
-      options={({ route }) => ({
-        title: route.params.name,
-        headerLeft: () => (
-          <Icon.Button
-            name="ios-arrow-back"
-            size={25}
-            backgroundColor="#fff"
-            color="#000"
-            onPress={() => navigation.goBack()}
-          ></Icon.Button>
-        ),
-      })}
     />
   </DenahStack.Navigator>
 );

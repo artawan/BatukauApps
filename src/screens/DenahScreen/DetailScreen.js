@@ -11,13 +11,11 @@ const DetailScreen = ({ navigation, route }) => {
       <View style={styles.container}>
         {pelinggih ? pelinggih.map((p) => (
           <Card style={styles.Card} key={p.nama}>
-          <TouchableOpacity onPress={() => navigation.navigate("Modal", {image: p.images , keterangan: p.nama})}>
-            {/* <Card.Cover source={{ uri: p.images }} style={styles.cover}/> */}
             <Image source={{ uri: p.images }} style={styles.cover}/>
             <Card.Content>
               <Paragraph style={styles.paragraph}>{p.nama}</Paragraph>
+              <Paragraph style={styles.paragraph}>{p.keterangan}</Paragraph>
             </Card.Content>
-          </TouchableOpacity>
           </Card>
         )) : null}
       </View>
