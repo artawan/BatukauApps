@@ -42,5 +42,8 @@
     "@babel/core": "^7.8.6",
     "babel-preset-expo": "^8.2.3"
   },
+  "jest": {
+    "setupFiles": "./mock.js"
+  },
   "private": true
 }
