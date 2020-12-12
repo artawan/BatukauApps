@@ -4,7 +4,6 @@ import { NavigationContainer } from "@react-navigation/native";
 import { SplashScreen } from "expo";
 import * as Font from "expo-font";
 import Constants from "expo-constants";
-import { connect } from "react-redux";
 
 // import { increaseCounter, decreaseCounter } from "./utils/actions/";
 import useLinking from "./components/navigation/useLinking";
@@ -63,18 +62,7 @@ function AppContainer(props) {
   }
 }
 
-function mapStateToProps(state) {
-  return {
-    // counter: state.Counter.counter,
-  };
-}
-
-const mapDispatchToProps = (dispatch) => ({
-  // increaseCounter: (counter) => dispatch(increaseCounter(counter)),
-  // decreaseCounter: (counter) => dispatch(decreaseCounter(counter)),
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(AppContainer);
+export default AppContainer;
 
 const styles = StyleSheet.create({
   container: {
