@@ -17,7 +17,6 @@ import {
 const HomeStack = createStackNavigator();
 const DenahStack = createStackNavigator();
 const UpakaraStack = createStackNavigator();
-const MainDenahStack = createStackNavigator();
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -128,10 +127,9 @@ const HomeStackScreen = ({ navigation }) => (
   </HomeStack.Navigator>
 );
 
-const MainDenahStackScreen = ({ navigation }) => (
-  <MainDenahStack.Navigator
-  >
-    <MainDenahStack.Screen
+const DenahStackScreen = ({ navigation }) => (
+  <DenahStack.Navigator>
+    <DenahStack.Screen
       name="Denah"
       component={DenahScreen}
       options={{
@@ -147,39 +145,15 @@ const MainDenahStackScreen = ({ navigation }) => (
       }}
     />
 
-    <MainDenahStack.Screen
+    <DenahStack.Screen
       name="Detail"
       component={DetailScreen}
-    />
-  </MainDenahStack.Navigator>
-);
-
-const DenahStackScreen = ({ navigation }) => (
-  <DenahStack.Navigator
-    mode="modal"
-    headerMode="none"
-  >
-    <DenahStack.Screen
-      name="Main"
-      component={MainDenahStackScreen}
-      options={{
-        title: 'Denah',
-        headerLeft: () => (
-          <Icon.Button
-            name="ios-menu"
-            size={25}
-            backgroundColor="#fff"
-            color="#000"
-            onPress={() => navigation.openDrawer()}
-          ></Icon.Button>
-        ),
-      }}
     />
   </DenahStack.Navigator>
 );
 
 const UpakaraStackScreen = ({ navigation }) => (
-  <DenahStack.Navigator
+  <UpakaraStack.Navigator
     screenOptions={{
       headerStyle: {},
       headerTintColor: "#000",
@@ -203,5 +177,5 @@ const UpakaraStackScreen = ({ navigation }) => (
         ),
       }}
     />
-  </DenahStack.Navigator>
+  </UpakaraStack.Navigator>
 );
