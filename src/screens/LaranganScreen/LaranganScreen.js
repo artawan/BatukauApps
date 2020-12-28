@@ -18,7 +18,7 @@ export default class LaranganScreen extends React.Component {
 
     return (
       <ScrollView style={styles.container}>
-        <BannerImage source={require('../../../assets/images/banner-image.jpg')}/>
+        <BannerImage source={require('./assets/larangan.jpg')}/>
         <Text style={{marginVertical: 20,}}>Berada ditempat suci sebaiknya kita menjaga sikap dan perilaku kita untuk menghormati pelaksanaan upakara serta untuk menjaga ketertiban umum. Adapun hal-hal yang perlu diperhatikan: </Text>
         <HTML html={data} />
       </ScrollView>
