@@ -1,7 +1,6 @@
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import HTML from "react-native-render-html";
-import {Asset} from 'expo-asset';
 
 import BannerImage from "../../components/BannerImage/BannerImage";
 import * as tahapanPersembahyangan from "../../data/tahapan-persembahyangan.json";
