@@ -5,7 +5,6 @@ import { SplashScreen } from "expo";
 import * as Font from "expo-font";
 import Constants from "expo-constants";
 
-// import { increaseCounter, decreaseCounter } from "./utils/actions/";
 import useLinking from "./components/navigation/useLinking";
 import DrawerNavigation from "./components/DrawerNavigation/DrawerNavigation";
 
@@ -51,11 +50,8 @@ function AppContainer(props) {
           ref={containerRef}
           initialState={initialNavigationState}
         >
-          {/* TODO: Topbar Navigator */}
 
           <DrawerNavigation />
-
-          {/* TODO: Add Bottom Tab Navigator */}
         </NavigationContainer>
       </View>
     );
