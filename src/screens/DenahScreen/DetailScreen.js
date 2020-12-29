@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet, Image } from "react-native";
 import { Card, Paragraph } from "react-native-paper";
-import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import { ScrollView } from "react-native-gesture-handler";
 
 const DetailScreen = ({ navigation, route }) => {
   const { pelinggih } = route.params;
@@ -11,7 +11,7 @@ const DetailScreen = ({ navigation, route }) => {
       <View style={styles.container}>
         {pelinggih ? pelinggih.map((p) => (
           <Card style={styles.Card} key={p.nama}>
-            <Image source={{ uri: p.images }} style={styles.cover}/>
+            <Image source={ p.images } style={styles.cover}/>
             <Card.Content>
               <Paragraph style={styles.paragraph}>{p.nama}</Paragraph>
               <Paragraph style={styles.paragraph}>{p.keterangan}</Paragraph>
