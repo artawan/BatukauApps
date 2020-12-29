@@ -128,7 +128,14 @@ const HomeStackScreen = ({ navigation }) => (
 );
 
 const DenahStackScreen = ({ navigation }) => (
-  <DenahStack.Navigator>
+  <DenahStack.Navigator
+  screenOptions={{
+    headerStyle: {},
+    headerTintColor: "#000",
+    headerTitleStyle: {
+      fontWeight: "bold",
+    },
+  }}>
     <DenahStack.Screen
       name="Denah"
       component={DenahScreen}
@@ -148,6 +155,17 @@ const DenahStackScreen = ({ navigation }) => (
     <DenahStack.Screen
       name="Detail"
       component={DetailScreen}
+      options={{
+        headerLeft: () => (
+          <Icon.Button
+            name="ios-menu"
+            size={25}
+            backgroundColor="#fff"
+            color="#000"
+            onPress={() => navigation.openDrawer()}
+          ></Icon.Button>
+        ),
+      }}
     />
   </DenahStack.Navigator>
 );
