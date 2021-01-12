@@ -158,11 +158,11 @@ const DenahStackScreen = ({ navigation }) => (
       options={{
         headerLeft: () => (
           <Icon.Button
-            name="ios-menu"
+            name="ios-arrow-back"
             size={25}
             backgroundColor="#fff"
             color="#000"
-            onPress={() => navigation.openDrawer()}
+            onPress={() => navigation.current? navigation.goBack() : navigation.navigate('Denah', {screen: 'Denah'}) }
           ></Icon.Button>
         ),
       }}

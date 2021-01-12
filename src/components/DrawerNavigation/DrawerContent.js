@@ -2,7 +2,7 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import {
   Avatar,
-  Title,
+  Text,
   Caption,
   Drawer
 } from "react-native-paper";
@@ -19,10 +19,10 @@ export function DrawerContent(props) {
       <DrawerContentScrollView {...props}>
         <View style={styles.drawerContent}>
           <View style={styles.userInfoSection}>
-            <View style={{ flexDirection: "row", marginTop: 15 }}>
+            <View style={{ flexDirection: "row", marginTop: 15}}>
               <Avatar.Image source={HomeIcon} size={50} />
               <View style={{ marginLeft: 15, flexDirection: "column" }}>
-                <Title style={styles.title}>PURA LUHUR BATUKAU</Title>
+                <Text style={styles.title}>BUKU SAKU {'\n'}PURA LUHUR BATUKAU</Text>
               </View>
             </View>
 
@@ -107,10 +107,11 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: "balinese-family",
-    fontSize: 28,
-    marginTop: 15,
-    fontWeight: "bold",
-    textAlignVertical: "center"
+    fontSize: 25,
+    textAlignVertical: "center",
+    margin:0,
+    paddingTop:10,
+    lineHeight:20,
   },
   caption: {
     fontSize: 14,

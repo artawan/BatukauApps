@@ -3,7 +3,7 @@ import * as Linking from 'expo-linking'
 
 export default function (containerRef) {
   return useLinking(containerRef, {
-    prefixes: [Linking.makeUrl("/")],
+    prefixes: ['https://app.batukauapp.com', 'batukauapp://'],
     config: {
       Root: {
         path: "root",
