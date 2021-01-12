@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="116bd2dc-a45e-4e65-923e-f4bff16e21b4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/AppContainer.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/DrawerNavigation/DrawerContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/DrawerNavigation/DrawerContent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/MainTab/MainTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/MainTab/MainTab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/components/navigation/useLinking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/navigation/useLinking.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/DenahScreen/DetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/DenahScreen/DetailScreen.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1myExYGNWX68behNmf88xjQjPbC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="116bd2dc-a45e-4e65-923e-f4bff16e21b4" name="Default Changelist" comment="" />
+      <created>1610457678697</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610457678697</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="122" width="1080" height="578" key="AVDManager" timestamp="1610457740976">
+      <screen x="0" y="22" width="1280" height="778" />
+    </state>
+    <state x="100" y="122" width="1080" height="578" key="AVDManager/0.22.1280.778@0.22.1280.778" timestamp="1610457740976" />
+  </component>
+</project>
