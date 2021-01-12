@@ -5,25 +5,24 @@ import { ScrollView } from "react-native-gesture-handler";
 import OptionButton from "../../components/OptionButton/OptionButton";
 
 // Import Gambar dari folder images
-import * as BejiTaksu from "./images/BejiTaksu/";
-import * as DalemKahyanganBatukaru from "./images/DalemKahyanganBatukaru/";
-import * as GedongPenyimpananBusana from "./images/GedongPenyimpananBusana/";
-import * as JabaSisi from "./images/JabaSisi/";
-import * as JabaTengah from "./images/JabaTengah/";
-import * as JeroanUtamaMandala from "./images/JeroanUtamaMandala/";
-import * as JroBangbang from "./images/JroBangbang/";
-import * as JroPenyaum from "./images/JroPenyaum/";
-import * as JroSasah from "./images/JroSasah/";
-import * as JroTaksu from "./images/JroTaksu/";
-import * as Padmasana from "./images/Padmasana/";
-import * as Pakisan from "./images/Pakisan/";
-import * as PalinggihPangubengan from "./images/PalinggihPangubengan/";
-import * as PalinggihPetangan from "./images/PalinggihPetangan/";
-import * as PalinggihWanaKerti from "./images/PalinggihWanaKerti/";
-import * as PelinggihBeji from "./images/PelinggihBeji/";
-import * as PelinggihDanu from "./images/PelinggihDanu/";
-import * as PewareganSuci from "./images/PewareganSuci/";
-import DenahPura from "./images/denah-pura.jpg";
+import * as BejiTaksu from "./assets/BejiTaksu";
+import * as DalemKahyanganBatukaru from "./assets/DalemKahyanganBatukaru";
+import * as GedongPenyimpananBusana from "./assets/GedongPenyimpananBusana";
+import * as JabaSisi from "./assets/JabaSisi";
+import * as JabaTengah from "./assets/JabaTengah";
+import * as JeroanUtamaMandala from "./assets/JeroanUtamaMandala";
+import * as JroBangbang from "./assets/JroBangbang";
+import * as JroPenyaum from "./assets/JroPenyaum";
+import * as JroSasah from "./assets/JroSasah";
+import * as JroTaksu from "./assets/JroTaksu";
+import * as Padmasana from "./assets/Padmasana";
+import * as Pakisan from "./assets/Pakisan";
+import * as PalinggihPangubengan from "./assets/PalinggihPangubengan";
+import * as PalinggihPetangan from "./assets/PalinggihPetangan";
+import * as PalinggihWanaKerti from "./assets/PalinggihWanaKerti";
+import * as PelinggihBeji from "./assets/PelinggihBeji";
+import * as PelinggihDanu from "./assets/PelinggihDanu";
+import * as PewareganSuci from "./assets/PewareganSuci";
 
   const window = Dimensions.get("window");
   const screen = Dimensions.get("screen");
@@ -273,18 +272,15 @@ class DenahScreen extends Component {
       <ScrollView>
         <View style={styles.container}>
           <Image
-            source={DenahPura}
             style={
               (styles.denahImage, { height: dimensions.screen.height, width: dimensions.screen.width - 5 })
             }
+            source={require('./assets/denah-pura.jpg')}
           />
           <View style={styles.optionContainer}>
           {pura.map( (p) =>
             <OptionButton key={p.name} image={p.image} label={p.name} keterangan={p.keterangan} onPress={() => {
               this.props.navigation.navigate("Detail", {pelinggih: p.pelinggih});
-              this.props.navigation.setParams({
-                Title: p.name,
-              })
             }} />
           )}
           </View>
