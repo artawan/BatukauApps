@@ -1,5 +1,5 @@
-import * as React from "react";
 import "react-native-gesture-handler";
+import * as React from "react";
 import { Platform, StatusBar, StyleSheet, View } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import { SplashScreen } from "expo";
@@ -43,8 +43,8 @@ const App = (props) =>{
     return null;
   } else {
     return(
-    <View style={styles.container}>
-        {Platform.OS === "ios" && <StatusBar barStyle="default" />}
+      <View style={styles.container}>
+        {Platform.OS === "ios" && <StatusBar barStyle="dark-content" />}
 
         <NavigationContainer
           ref={containerRef}

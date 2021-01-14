@@ -1,5 +1,4 @@
 import * as React from "react";
-
 import {
   SejarahScreen,
   TahapanScreen,
@@ -26,7 +25,7 @@ function DrawerNavigation() {
       />
       <Drawer.Screen
         name="Sejarah"
-        component={SingleScreenContainer}
+        component={SejarahStackScreen}
       />
       <Drawer.Screen
         name="Denah"
@@ -55,7 +54,7 @@ function DrawerNavigation() {
   );
 }
 
-const SingleScreenContainer = ({ navigation }) => (
+const SejarahStackScreen = ({ navigation }) => (
   <SejarahStack.Navigator
     screenOptions={{
       headerStyle: {
