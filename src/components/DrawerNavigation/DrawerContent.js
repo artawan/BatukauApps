@@ -40,28 +40,28 @@ export function DrawerContent(props) {
               )}
               label="Home"
               onPress={() => 
-                props.navigation.navigate('Home', {initialRoute: "Home"})
+                props.navigation.navigate('HomeScreen', {initialRoute: "HomeTab"})
               }
             />
             <CustomDrawerItem
               image={require("./icon/sejarah-icon.png")}
               label="Sejarah Pura"
               onPress={() => {
-                props.navigation.navigate("Sejarah");
+                props.navigation.navigate("SejarahScreen");
               }}
             />
             <CustomDrawerItem
               image={require("./icon/denah-icon.png")}
               label="Denah Pura"
               onPress={() => {
-                props.navigation.navigate("Denah", {initialRoute: "Denah"});
+                props.navigation.navigate("DenahScreen", {initialRoute: "DenahTab"});
               }}
             />
             <CustomDrawerItem
               image={require("./icon/sembahyang-icon.png")}
               label="Tahapan Persembahyangan"
               onPress={() => {
-                props.navigation.navigate("Tahapan");
+                props.navigation.navigate("TahapanScreen");
               }}
             />
 
@@ -69,7 +69,7 @@ export function DrawerContent(props) {
               image={require("./icon/larangan-icon.png")}
               label="Larangan"
               onPress={() => {
-                props.navigation.navigate("Larangan");
+                props.navigation.navigate("LaranganScreen", {initialRoute: "LaranganTab"});
               }}
               />
 
@@ -77,7 +77,7 @@ export function DrawerContent(props) {
               image={require("./icon/canang-sari-icon.png")}
               label="Upakara"
               onPress={() => {
-                props.navigation.navigate("Upakara", {initialRoute: "Upakara"});
+                props.navigation.navigate("UpakaraScreen", {initialRoute: "UpakaraTab"});
               }}
             />
           </Drawer.Section>
@@ -90,7 +90,7 @@ export function DrawerContent(props) {
           )}
           label="Profile"
           onPress={() => {
-            props.navigation.navigate("Profile", {initialRoute: "Profile"});
+            props.navigation.navigate("ProfileScreen");
           }}
         />
       </Drawer.Section>

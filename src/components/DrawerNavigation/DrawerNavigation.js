@@ -2,7 +2,7 @@ import * as React from "react";
 import {
   SejarahScreen,
   TahapanScreen,
-  LaranganScreen,
+  ProfileScreen,
 } from "../../screens";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { createStackNavigator } from "@react-navigation/stack";;
@@ -13,41 +13,37 @@ import Icon from "react-native-vector-icons/Ionicons";
 const Drawer = createDrawerNavigator();
 const SejarahStack = createStackNavigator();
 const TahapanStack = createStackNavigator();
-const LaranganStack = createStackNavigator();
+const ProfileStack = createStackNavigator();
 
 function DrawerNavigation() {
   return (
     <Drawer.Navigator drawerContent={(props) => <DrawerContent {...props} />}>
       <Drawer.Screen
-        name="Home"
-        initialParams={{ initialRoute: "Home" }}
+        name="HomeScreen"
         component={MainTabScreen}
       />
       <Drawer.Screen
-        name="Sejarah"
+        name="SejarahScreen"
         component={SejarahStackScreen}
       />
       <Drawer.Screen
-        name="Denah"
-        initialParams={{ initialRoute: "Denah" }}
+        name="DenahScreen"
         component={MainTabScreen}
       />
       <Drawer.Screen
-        name="Tahapan"
+        name="TahapanScreen"
         component={TahapanStackScreen}
       />
       <Drawer.Screen
-        name="Larangan"
-        component={LaranganStackScreen}
-      />
-      <Drawer.Screen
-        name="Profile"
-        initialParams={{ initialRoute: "Profile" }}
+        name="LaranganScreen"
         component={MainTabScreen}
+        />
+      <Drawer.Screen
+        name="ProfileScreen"
+        component={ProfileStackScreen}
       />
       <Drawer.Screen
-        name="Upakara"
-        initialParams={{ initialRoute: "Upakara" }}
+        name="UpakaraScreen"
         component={MainTabScreen}
       />
     </Drawer.Navigator>
@@ -118,8 +114,8 @@ const TahapanStackScreen = ({ navigation }) => (
   </TahapanStack.Navigator>
 );
 
-const LaranganStackScreen = ({ navigation }) => (
-  <LaranganStack.Navigator
+const ProfileStackScreen = ({ navigation }) => (
+  <ProfileStack.Navigator
     screenOptions={{
       headerStyle: {
         backgroundColor: "#fff",
@@ -130,11 +126,11 @@ const LaranganStackScreen = ({ navigation }) => (
       },
     }}
   >
-  <LaranganStack.Screen
-      name="Larangan"
-      component={LaranganScreen}
+  <ProfileStack.Screen
+      name="Profile"
+      component={ProfileScreen}
       options={{
-        title: 'Larangan',
+        title: 'Profile',
         headerLeft: () => (
           <Icon.Button
             name="ios-menu"
@@ -147,7 +143,7 @@ const LaranganStackScreen = ({ navigation }) => (
         
       }}
     />
-  </LaranganStack.Navigator>
+  </ProfileStack.Navigator>
 );
 
 export default DrawerNavigation;
