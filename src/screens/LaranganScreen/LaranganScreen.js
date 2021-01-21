@@ -14,13 +14,12 @@ export default class LaranganScreen extends React.Component {
       },
     });
 
-    const data = datas.data;
+    const larangan = datas.data;
 
     return (
       <ScrollView style={styles.container}>
         <BannerImage source={require('./assets/larangan.jpg')}/>
-        <Text style={{marginVertical: 20,}}>Berada ditempat suci sebaiknya kita menjaga sikap dan perilaku kita untuk menghormati pelaksanaan upakara serta untuk menjaga ketertiban umum. Adapun hal-hal yang perlu diperhatikan: </Text>
-        <HTML html={data} />
+        <HTML html={larangan} />
       </ScrollView>
     );
   }
