@@ -7,8 +7,8 @@ export default function (containerRef) {
       Root: {
         path: "root",
         screens: {
-          Root: "HomeScreen",
-          HomeScreen: "HomeScreen",
+          Root: "/",
+          HomeScreen: 'HomeScreen',
           ProfileScreen: "ProfileScreen",
           SejarahScreen: "SejarahScreen",
           DenahScreen: "DenahScreen",

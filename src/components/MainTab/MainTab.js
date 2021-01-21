@@ -9,7 +9,7 @@ import {
   HomeScreen,
   DetailScreen,
   DenahScreen,
-  ProfileScreen,
+  LaranganScreen,
   SejarahScreen,
   UpakaraScreen,
 } from "../../screens";
@@ -17,6 +17,7 @@ import {
 const HomeStack = createStackNavigator();
 const DenahStack = createStackNavigator();
 const UpakaraStack = createStackNavigator();
+const LaranganStack = createStackNavigator();
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -30,7 +31,7 @@ const MainTabScreen = ({ color, route }) => {
       activeColor="#000"
     >
       <Tab.Screen
-        name="Home"
+        name="HomeTab"
         component={HomeStackScreen}
         options={{
           tabBarLabel: "Home",
@@ -41,7 +42,7 @@ const MainTabScreen = ({ color, route }) => {
         }}
       />
       <Tab.Screen
-        name="Denah"
+        name="DenahTab"
         component={DenahStackScreen}
         options={{
           tabBarLabel: "Denah",
@@ -52,25 +53,24 @@ const MainTabScreen = ({ color, route }) => {
         }}
       />
       <Tab.Screen
-        name="Upakara"
-        component={UpakaraStackScreen}
+        name="LaranganTab"
+        component={LaranganStackScreen}
         options={{
-          tabBarLabel: "Upakara",
+          tabBarLabel: "Larangan",
           tabBarColor: "#fff",
-          tabBarIcon: ({ color }) => (
-            <Image source={require('./assets/canang-sari-icon.png')} style={{width: 24, height: 24}} />
-            // <Icon name="ios-notifications" color={color} size={26} />
+          tabBarIcon: () => (
+            <Image source={require('./assets/larangan-icon.png')} style={{width: 24, height: 24}} />
           ),
         }}
       />
       <Tab.Screen
-        name="Profile"
-        component={ProfileScreen}
+        name="UpakaraTab"
+        component={UpakaraStackScreen}
         options={{
-          tabBarLabel: "Profile",
+          tabBarLabel: "Upakara",
           tabBarColor: "#fff",
-          tabBarIcon: ({ color }) => (
-            <Icon name="ios-person" color={color} size={26} />
+          tabBarIcon: () => (
+            <Image source={require('./assets/canang-sari-icon.png')} style={{width: 24, height: 24}} />
           ),
         }}
       />
@@ -99,21 +99,6 @@ const HomeStackScreen = ({ navigation }) => (
       component={HomeScreen}
       options={{
         title: "Home",
-        headerLeft: () => (
-          <Icon.Button
-            name="ios-menu"
-            size={25}
-            backgroundColor="#1f65ff"
-            onPress={() => navigation.openDrawer()}
-          ></Icon.Button>
-        ),
-      }}
-    />
-    <HomeStack.Screen
-      name="Sejarah"
-      component={SejarahScreen}
-      options={{
-        title: "Sejarah",
         headerLeft: () => (
           <Icon.Button
             name="ios-menu"
@@ -196,4 +181,31 @@ const UpakaraStackScreen = ({ navigation }) => (
       }}
     />
   </UpakaraStack.Navigator>
+);
+const LaranganStackScreen = ({ navigation }) => (
+  <LaranganStack.Navigator
+    screenOptions={{
+      headerStyle: {},
+      headerTintColor: "#000",
+      headerTitleStyle: {
+        fontWeight: "bold",
+      },
+    }}
+  >
+    <LaranganStack.Screen
+      name="Larangan"
+      component={LaranganScreen}
+      options={{
+        headerLeft: () => (
+          <Icon.Button
+            name="ios-menu"
+            size={25}
+            backgroundColor="#fff"
+            color="#000"
+            onPress={() => navigation.openDrawer()}
+          ></Icon.Button>
+        ),
+      }}
+    />
+  </LaranganStack.Navigator>
 );

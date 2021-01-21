@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet } from "react-native";
-
-import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import { View, Text, StyleSheet, Button } from "react-native";
+import { RectButton, ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 
 import Slider from "../../components/Slider/Slider";
 
@@ -91,7 +91,6 @@ class HomeScreen extends Component {
         flex: 1,
         alignContent: "flex-end",
         alignItems: "center",
-        // backgroundColor:'#009387',
       },
       contentContainer: {
         flex: 1,
@@ -136,12 +135,39 @@ class HomeScreen extends Component {
         textAlign: "justify",
         lineHeight: 20,
         paddingHorizontal: 15,
+      },
+      floatingButton:{
+        position: "absolute",
+        top: 20,
+        left: 20,
+        width: 35,
+        height: 35,
+        justifyContent: 'center',
+        textAlign:'center',
+        alignItems: 'center',
+        borderRadius: 18,
+        zIndex:1,
+        backgroundColor: '#fff',
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 5 },
+        shadowRadius: 15,
+        shadowOpacity: 0.24,
       }
     });
     const {sliderItem} = this.state;
 
     return (
       <View style={styles.container}>
+          <RectButton style={styles.floatingButton}
+            onPress={() => this.props.navigation.openDrawer()}
+          >
+            <Icon
+                name="menu"
+                size={25}
+                color="#000"
+                backgroundColor="#fff"
+              ></Icon>
+          </RectButton>
         <Slider data = {sliderItem} />
 
         <View
