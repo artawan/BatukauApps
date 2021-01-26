@@ -10,7 +10,6 @@ import {
   DetailScreen,
   DenahScreen,
   LaranganScreen,
-  SejarahScreen,
   UpakaraScreen,
 } from "../../screens";
 
