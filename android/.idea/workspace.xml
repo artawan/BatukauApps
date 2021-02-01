@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116bd2dc-a45e-4e65-923e-f4bff16e21b4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/AppContainer.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/DrawerNavigation/DrawerContent.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/DrawerNavigation/DrawerContent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/MainTab/MainTab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/MainTab/MainTab.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/components/navigation/useLinking.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/components/navigation/useLinking.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/screens/DenahScreen/DetailScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/DenahScreen/DetailScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/screens/DenahScreen/DenahScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/screens/DenahScreen/DenahScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,9 +38,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="122" width="1080" height="578" key="AVDManager" timestamp="1610457740976">
+    <state x="100" y="122" width="1080" height="578" key="AVDManager" timestamp="1611639624446">
       <screen x="0" y="22" width="1280" height="778" />
     </state>
-    <state x="100" y="122" width="1080" height="578" key="AVDManager/0.22.1280.778@0.22.1280.778" timestamp="1610457740976" />
+    <state x="100" y="122" width="1080" height="578" key="AVDManager/0.22.1280.778@0.22.1280.778" timestamp="1611639624446" />
   </component>
 </project>
