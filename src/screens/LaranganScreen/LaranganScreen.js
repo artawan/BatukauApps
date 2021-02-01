@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, StyleSheet, Text } from 'react-native';
+import { ScrollView, StyleSheet } from 'react-native';
 import HTML from "react-native-render-html";
 
 import BannerImage from "../../components/BannerImage/BannerImage";
